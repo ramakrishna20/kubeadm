@@ -1,7 +1,7 @@
 ---
 apiServer:
   certSANs:
-    - 
+    - {{ ansible_eth0.ipv4.address }}
 apiVersion: kubeadm.k8s.io/v1beta2
 controllerManager: {}
 dns:
